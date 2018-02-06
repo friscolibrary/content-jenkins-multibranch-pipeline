@@ -39,6 +39,8 @@ pipeline {
         sh 'git merge development'
         echo "Git Push to Origin"
         sh 'git push origin master'
+        sh 'git config user.email "friscolibrary@github.com"'
+        sh 'git config user.name "friscolibrary"'
       }
     }    
   }
