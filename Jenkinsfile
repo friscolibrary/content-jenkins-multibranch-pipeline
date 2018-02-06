@@ -37,10 +37,10 @@ pipeline {
         sh 'git checkout master'
         echo "Merging Development into Master"
         sh 'git merge development'
+        echo "Git Push to Origin"
+        sh 'git push origin master'
         sh 'git config --global user.name "friscolibrary"'
         sh 'git config --global user.email "rahulv480235@gmail.com"'
-        echo "Git Push to Origin"
-        sh 'git push origin master' 
       }
     }    
   }
